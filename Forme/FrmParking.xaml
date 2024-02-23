@@ -1,0 +1,25 @@
+﻿<Window x:Class="Hotel.Forme.FrmParking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/izmeni parking mesto" Height="200" Width="250" Icon="/Forme/icon.jpg" FontWeight="Bold" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Label Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold" BorderThickness="1" Foreground="Brown" Content="Broj mesta"
+               HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="txtBrojMesta" Background="Beige" BorderBrush="RosyBrown" BorderThickness="1" HorizontalAlignment="Left" Margin="110,20,0,0"
+                 TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Cursor="Hand" BorderBrush="RosyBrown" Background="Beige" Foreground="Brown" FontWeight="Bold" BorderThickness="1"
+                Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="30,130,0,0" VerticalAlignment="Top" Click="btnSacuvaj_Click" Width="60"/>
+        <Button Cursor="Hand" BorderBrush="RosyBrown" Background="Beige" Foreground="Brown" FontWeight="Bold"
+                BorderThickness="1" Name="btnOtkazi" Content="Otkazi" HorizontalAlignment="Left" Margin="160,130,0,0" VerticalAlignment="Top" Click="btnOtkazi_Click" Width="60"/>
+        <Label Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold" BorderThickness="1" Foreground="Brown"  Content="Rezervacija" 
+               HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top"/>
+        <ComboBox Name="cbRezervacija" DisplayMemberPath="Zauzetost" SelectedValuePath="RezervacijaID" HorizontalAlignment="Left" Margin="110,50,0,0" VerticalAlignment="Top" Width="120"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\Andrijana\OneDrive\Radna površina\parkingg.jpg"/>
+        </Grid.Background>
+    </Grid>
+</Window>

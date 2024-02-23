@@ -1,0 +1,35 @@
+﻿<Window x:Class="Hotel.Forme.FrmGost"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni Gosta" Height="240" Width="250"  Icon="/Forme/icon.jpg" FontWeight="Bold" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="Beige">
+            <Image Source="C:\Users\Andrijana\OneDrive\Radna površina\gosttt.jpg" />
+        </StackPanel>
+        <Label  Content="Ime" Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold" 
+                BorderThickness="1" Foreground="Brown" HorizontalAlignment="Left" Margin="20,20,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center" />
+        <TextBox Name="txtIme" Background="Beige" BorderBrush="RosyBrown" BorderThickness="1" 
+                 HorizontalAlignment="Left" Margin="90,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Prezime" Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold"
+               BorderThickness="1" Foreground="Brown" HorizontalAlignment="Left" Margin="20,50,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center"/>
+        <Label Content="Jmbg" Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold" 
+               BorderThickness="1" Foreground="Brown" HorizontalAlignment="Left" Margin="20,80,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center"/>
+        <Label Content="Kontakt" Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold"
+               BorderThickness="1" Foreground="Brown" HorizontalAlignment="Left" Margin="20,110,0,0" VerticalAlignment="Top" Width="60" HorizontalContentAlignment="Center"/>
+        <TextBox Name="txtPrezime" Background="Beige" BorderBrush="RosyBrown" BorderThickness="1"
+                 HorizontalAlignment="Left" Margin="90,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtJmbg" Background="Beige" BorderBrush="RosyBrown" BorderThickness="1" 
+                 HorizontalAlignment="Left" Margin="90,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="txtKontakt" Background="Beige" BorderBrush="RosyBrown" BorderThickness="1" 
+                 HorizontalAlignment="Left" Margin="90,110,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Cursor="Hand" BorderBrush="RosyBrown" Background="Beige" Foreground="Brown" FontWeight="Bold" BorderThickness="1" 
+                Name="btnSacuvaj" Content="Sacuvaj" Width="75" HorizontalAlignment="Left" Margin="30,170,0,0" VerticalAlignment="Top" Click="btnSacuvaj_Click"/>
+        <Button Cursor="Hand" BorderBrush="RosyBrown" Background="Beige" Foreground="Brown"
+                FontWeight="Bold" BorderThickness="1" Name="btnOtkazi" Content="Otkazi" Margin="120,170,0,0" VerticalAlignment="Top" Click="btnOtkazi_Click" Width="75"/>
+
+    </Grid>
+</Window>

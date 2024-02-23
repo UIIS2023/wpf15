@@ -1,0 +1,23 @@
+﻿<Window x:Class="Hotel.Forme.FrmVrstaSobe"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hotel.Forme"
+        mc:Ignorable="d"
+        Title="Dodaj/Izmeni vrstu sobe" Height="180" Width="250" Icon="/Forme/icon.jpg" FontWeight="Bold" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel Background="Beige">
+            <Image Source="C:\Users\Andrijana\OneDrive\Radna površina\soba.jpg" Height="167" Width="251" />
+        </StackPanel>
+        <Label Background="Beige" BorderBrush="RosyBrown" FontWeight="Bold" BorderThickness="1" Foreground="Brown" 
+               Content="Naziv sobe:" HorizontalAlignment="Left" Margin="30,20,0,0" VerticalAlignment="Top"/>
+        <TextBox Background="Beige" BorderBrush="RosyBrown" BorderThickness="1" Name="txtNazivSobe"
+                 HorizontalAlignment="Left" Margin="110,20,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button Cursor="Hand" BorderBrush="RosyBrown" Background="Beige" Foreground="Brown" FontWeight="Bold"
+                BorderThickness="1" Name="btnSacuvaj" Content="Sacuvaj" HorizontalAlignment="Left" Margin="40,120,0,0" VerticalAlignment="Top" Click="btnSacuvaj_Click" Width="60"/>
+        <Button Cursor="Hand" BorderBrush="RosyBrown" Background="Beige" Foreground="Brown" FontWeight="Bold"
+                BorderThickness="1" Name="btnOtkazi" Content="Otkazi" Margin="110,120,0,0" VerticalAlignment="Top" Click="btnOtkazi_Click" Width="60"/>
+
+    </Grid>
+</Window>
